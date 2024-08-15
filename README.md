@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blogging Platform
+
+A fully-featured blogging platform built with **Next.js**, **OAuth**, **MongoDB**, and **Prisma**. This project allows users to create accounts, write, edit, and publish blog posts, and engage with the content through comments and likes.
+
+## Workflow
+
+1. **Open the Site**: Access the platform to start exploring blogs.
+2. **Login Using Google**: Securely log in using your Google account.
+3. **Browse the Site**: Explore various blogs across different categories.
+4. **Read Blogs**: Dive into posts shared by other users.
+5. **Write Your Own Blog**: Use the "Create Blog" button in the navbar to share your thoughts.
+6. **Comment on Blogs**: Engage with the community by commenting on others' posts.
+
+## Features
+
+- **User Authentication**: OAuth-based login via Google and GitHub.
+- **Rich Text Editor**: Create and format blog posts using a simple, intuitive editor.
+- **SEO-Friendly**: Optimize your blog posts with meta tags, slugs, and more.
+- **Dynamic Routing**: Individual pages for each blog post with Next.js dynamic routes.
+- **Responsive Design**: Mobile-first design for seamless access across devices.
+- **User Profiles**: View and manage user profiles with published articles.
+- **CRUD Operations**: Full control over blog content—create, read, update, and delete posts.
+- **Commenting System**: Engage with readers through comments on posts.
+- **Like System**: Users can like posts, providing quick feedback.
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Database**: [MongoDB](https://www.mongodb.com/)
+- **ORM**: [Prisma](https://www.prisma.io/)
+- **Authentication**: [NextAuth.js](https://next-auth.js.org/) with OAuth (Google, GitHub)
+- **Styling**: Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Node.js (>= 16.x)
+- MongoDB (local or cloud instance)
+- Google and GitHub OAuth credentials
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/rishita1304/WriteWise.git
+   cd WriteWise
 
-## Learn More
+2. Install dependencies:
+   ```bash
+   npm install
 
-To learn more about Next.js, take a look at the following resources:
+3. Set up Prisma:
+    ```bash
+    npx prisma generate
+    npx prisma db push
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server::
+    ```bash
+    npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Open your browser and navigate to http://localhost:3000.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    
